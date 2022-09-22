@@ -1,0 +1,10 @@
+.autres{
+    background-color: black;
+    color: white;
+    display:flex;
+    font-size: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
