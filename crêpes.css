@@ -8,3 +8,10 @@
     justify-content: center;
 
 }
+.16 recettes{
+
+    transition: color 2s;
+}
+.16 recettes:hover {
+    color: red;
+}
