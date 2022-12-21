@@ -1,14 +1,10 @@
-<?php
 
-if($_SERVER['REQUEST_METHOD']=='POST')
-{
-  $name = utf8_decode($_POST["name"]);
-  $mail = ($_POST["mail"]);
-  $msg = utf8_decode($_POST["msg"]);
-  $headers = 'From :' .$nom.'<'.$mail.'>'."\r\n";
-  $headers = 'Reply to: <'.$mail.'>'."\r\n";
-
-  $to = 'r.gomis99@outlook.fr';
-  mail ($to, $mail, $message, $headers);
-}
-?>
+<form action="contact.php" method="post">
+    Mail: <input type="text" name="mail" value="" />
+    <br />
+    Sujet: <input type="text" name="sujet" value="" />
+    <br />
+    Message: <textarea name="message" cols="40" rows="20"></textarea>
+    <br />
+    <input type="submit" name="envoyer" value="Envoyer" />
+</form>
